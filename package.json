@@ -1,0 +1,18 @@
+{
+  "fitbit": {
+    "appUUID": "d2cbd6a1-15a5-4d94-a069-02c69c67b8c3",
+    "appType": "clockface",
+    "appDisplayName": "Tide 2",
+    "iconFile": "resources/icon.png",
+    "wipeColor": "",
+    "requestedPermissions": [
+      "access_internet",
+      "run_background"
+    ],
+    "i18n": {
+      "en": {
+        "name": "Tide 2"
+      }
+    }
+  }
+}

@@ -1,0 +1,18 @@
+<svg>
+  <gradientRect width="100%" height="100%"
+    gradient-type="linear"
+    gradient-x1="0" gradient-y1="50"
+    gradient-x2="0" gradient-y2="100%-50"
+    gradient-color1="#161A1F" gradient-color2="#162d49" />
+<!-- gradient-color1="#161A1F" gradient-color2="#454F5E" /> -->
+<!-- gradient-color1="#161A1F" gradient-color2="#172a42" /> -->
+  <image visibility="hidden" id="fishTime" href="fishTime.png"/>
+  <image visibility="hidden" id="highTide" href="highTide.png"/>
+  <image visibility="hidden" id="lowTide" href="lowTide.png"/>
+  <image id="tideLine" href="tideLine.png"/>
+  <text id="myLabel" />
+  <text id="side" />
+  <text id="dated" />
+  <text id="dayed" />
+  <text id="countdown" />
+</svg>

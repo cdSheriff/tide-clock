@@ -5,6 +5,7 @@ import fs from "fs";
 import {zeroPad} from "../common/utils";
 import {countdown} from "../common/utils";
 import {hourMe} from "../common/utils";
+import { me as device } from "device";
 
 let countdownText = document.getElementById('countdown');
 let myLabel = document.getElementById("myLabel");
@@ -16,6 +17,8 @@ var highTide = document.getElementById("highTide");
 var lowTide = document.getElementById("lowTide");
 let side = document.getElementById('side');
 
+// adjust fishie position for meson
+if (device.modelName == 'Versa') {fishTime.x = -24}
 // Update the clock every minute
 clock.granularity = "minutes";
 

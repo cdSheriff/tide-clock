@@ -6,13 +6,13 @@
     gradient-color1="#161A1F" gradient-color2="#162d49" />
 <!-- gradient-color1="#161A1F" gradient-color2="#454F5E" /> -->
 <!-- gradient-color1="#161A1F" gradient-color2="#172a42" /> -->
-  <image visibility="hidden" id="fishTime" href="fishTime.png"/>
-  <image visibility="hidden" id="highTide" href="highTide.png"/>
-  <image visibility="hidden" id="lowTide" href="lowTide.png"/>
-  <image id="tideLine" href="tideLine.png"/>
+  <image visibility="hidden" id="fishTime" href="fishTime.png" width="348"/>
+  <image visibility="hidden" id="highTide" href="highTide.png" height="250"/>
+  <image visibility="hidden" id="lowTide" href="lowTide.png" height="250"/>
+  <image id="tideLine" href="tideLine.png" height="250"/>
   <text id="myLabel" />
   <text id="side" />
-  <text id="dated" />
+<!--   <text id="dated" /> -->
   <text id="dayed" />
   <text id="countdown" />
 </svg>

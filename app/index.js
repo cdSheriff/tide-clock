@@ -5,16 +5,20 @@ import fs from "fs";
 import {zeroPad} from "../common/utils";
 import {countdown} from "../common/utils";
 import {hourMe} from "../common/utils";
+import { me as device } from "device";
 
 let countdownText = document.getElementById('countdown');
 let myLabel = document.getElementById("myLabel");
 let dayed = document.getElementById("dayed");
-let dated = document.getElementById("dated");
+// let dated = document.getElementById("dated");
 var fishTime = document.getElementById("fishTime");
 var tideLine = document.getElementById("tideLine");
 var highTide = document.getElementById("highTide");
 var lowTide = document.getElementById("lowTide");
 let side = document.getElementById('side');
+
+// adjust fishie position for meson
+if (device.modelName == 'Versa') {fishTime.x = -24}
 
 // Update the clock every minute
 clock.granularity = "minutes";
@@ -29,16 +33,16 @@ function updateClock(globalTides) {
   console.log('updating clock');
   let today = new Date();
   let date = zeroPad(today.getDate());
-  let hours = today.getHours();
-  let houring = hourMe(hours);
-  side.text = `${houring[0]}`;
-  hours = houring[1];
+  let hours = today.getHours() % 12 || 12;
+  // let houring = hourMe(today.getHours());
+  side.text = `${hourMe(today.getHours())}`;
+  // hours = houring[1];
   let mins = zeroPad(today.getMinutes());
   let days = ['Sun','Mon','Tue','Wed','Thu','Fri','Sat'];
   let day = days[today.getDay()];
   myLabel.text = `${hours}:${mins}`;
-  dayed.text = `${day}`;
-  dated.text = `${date}`;
+  dayed.text = `${day} ${date}`;
+  // dated.text = `${date}`;
   
   // if the global tide variabe is there, use it
   if (globalTides) {

@@ -9,6 +9,10 @@
       "access_internet",
       "run_background"
     ],
+    "buildTargets": [
+      "higgs",
+      "meson"
+    ],
     "i18n": {
       "en": {
         "name": "Tide 2"

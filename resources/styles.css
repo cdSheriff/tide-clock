@@ -18,18 +18,18 @@
   text-length: 32;
   text-anchor: end;
   x: 100%;
-  y: 175;
+  y: 100%-70;
   fill: white;
 }
 
-#dated {
+/* #dated {
   font-size: 40;
   font-family: Colfax-Light;
   text-anchor: start;
   x: 25%;
   y: 50;
   fill: white;
-}
+} */
 
 #dayed {
   font-size: 40;
@@ -38,6 +38,7 @@
   x: 0%;
   y: 50;
   fill: white;
+  text-length:32;
 }
 
 #countdown {

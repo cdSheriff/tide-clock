@@ -25,31 +25,9 @@ export function countdown(globalTides, today) {
   return goodies;
 };
 
-// export function hourMe(hours) {
-//   let houring = [];
-//   if (hours >= 12 && hours < 23) {
-//     houring[0] = 'PM';
-//   } else {
-//     houring[0] = 'AM';
-//   };
-//   if (hours > 12) {
-//     hours -= 12;
-//   };
-//   if (hours == 0) {
-//     hours = 12;
-//   };
-//   houring[1] = hours;
-//   return houring;
-// };
-
+// set AM or PM
 export function hourMe(hours) {
-  let houring = ['AM',hours];
-  if (houring[1] == 0) {
-    houring[1] = 12;
-  } else if (houring == 12) {
-    houring[0] = 'PM';
-  } else if (houring[1] >= 13) {
-    houring = ['PM', houring[1] - 12];
-  };
+  let houring = 'AM';
+  if (hours >= 12) {houring = 'PM'};
   return houring;
 };

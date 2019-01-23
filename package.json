@@ -18,5 +18,8 @@
         "name": "Tide 2"
       }
     }
+  },
+  "devDependencies": {
+    "@fitbit/sdk": "~3.0.0"
   }
 }

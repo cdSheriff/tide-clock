@@ -82,7 +82,7 @@ function fetchTides(regionID, stationID, requested = false) {
   // UKHO
   } else if (regionID == 1) {
     var keyHead = new Headers();
-    keyHead.append("Ocp-Apim-Subscription-Key", "fb078c29940a460ca4dab1a5172d2c02");
+    keyHead.append("Ocp-Apim-Subscription-Key", "x");
     let initObject = {
       headers: keyHead
     };
@@ -147,7 +147,7 @@ function testStation(regionID, stationID) {
   // UKHO
   } else if (regionID == 1) {
     var keyHead = new Headers();
-    keyHead.append("Ocp-Apim-Subscription-Key", "fb078c29940a460ca4dab1a5172d2c02");
+    keyHead.append("Ocp-Apim-Subscription-Key", "x");
     let initObject = {
       headers: keyHead
     };
